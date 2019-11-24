@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #buttonMuse {
+            font-family: 'Pacifico', cursive;
+            font-size: 45px;
+            line-height: 24px;
+            z-index: 33;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    //button to go previous page class page for mobileui to add page
+    <div class="page">
+        <div class="header grey-400">
+            <div class="left">
+                <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
+            </div>
+            <h1 class="title align-center">Quote for today</h1>
+        </div>
+//Picture and quote generator referece to my script.js page
+
+        <div class="content has-header">
+            <div class="list">
+                <div class="item full">
+                    <input id="name" type="text" value="" readonly>
+                    <img src="/img/balance.jpg" />
+                    <div class="space"></div>
+                </div>
+                <div>
+                    <button class="grey-400 border-black text-black full" id="buttonMuse" onclick="myFunction()">Create Muse</button>
+                </div>
+                <div class="cover vertical-align-center grey-400 align-center blend-soft-light">
+                    <div class="space"></div>
+                    <p id="quote1">
+                        <br /><br /><br /><br />
+                        &nbsp;
+                        Here comes your quote for today:
+                        <br /><br /><br /><br />
+                    </p>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                </div>
+    //Button to go to the next page
+                <button class="grey-400 border-black text-black full" onclick="openPage('about')">About Mindfulness</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

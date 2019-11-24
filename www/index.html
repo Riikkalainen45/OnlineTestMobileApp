@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>MindfulnessApp</title>
+    <style>
+
+
+        #titleMindfulness {
+            font-family: 'Pacifico', cursive;
+            font-size: 45px;
+            line-height: 24px;
+            z-index: 33;
+            position: relative;
+        }
+    </style>
+</head>
+ 
+<body class="cover vertical-align-center blue-grey-900 align-center blend-soft-light" style="background-image:url('/img/balance.jpg')">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <p class="text-black">WELCOME TO</p>
+    <h1 id="titleMindfulness" class="text-black">Mindfulness</h1>
+
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <div class="list no-border opacity-60">
+        <div class="item label-fixed text-black">
+            <label for="txtName">Username</label>
+            <input type="text" id="txtName" data-clear-btn="true" />
+        </div>
+        <div class="item label-fixed text-black">
+            <label for="txtuser">Password</label>
+            <input type="text" id="txtuser" data-clear-btn="true" />
+            <label for="btnAdd"></label>
+            <a class="ui-btn ui-icon-plus ui-btn-icon-left"
+               id="btnAdd" onclick="addUser()">Add</a>
+        </div>
+   
+        <div class="space"></div>
+        <div class="space"></div>
+        <button class="gray border-black text-black full" onclick="openPage('quote')">Your Muse for today</button>
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+   
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="Scripts/databaseHandler.js"></script>
+    <script src="Scripts/userHandler.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile1.4.5.min.js"></script>
+    <script type="text/javascript" src="Scripts/index.js"></script>
+</body>
+</html>
